@@ -1,0 +1,118 @@
+Os objetos da classe string têm vários métodos.
+
+Vejamos quais são:
+
+ChartAt(índice)  
+
+Retorna o caractere que está na posição indicada como índice. As posições de uma string começam sempre em 0.
+
+IndexOf(caractere, desde)
+
+Retorna a posição da primeira vez que aparece o caractere indicado por parâmetro. Se não encontrar o caractere indicado, retorna -1. O parâmetro "desde" é opcional e serve para indicar a partir de que posição desejamos começar a busca.
+
+lastIndexOf(caractere, desde)
+
+Busca, a partir do final da string, a posição de um caractere. O parâmetro "desde" é opcional e serve para indicar a partir de que posição desejamos começar a busca.
+
+Replace(substring_a_buscar, novaString)
+
+Serve para substituir trechos do texto de uma string. O método não substitui direto na string em que está, e sim retorna um novo texto com o trecho substituído.
+
+Split(separador)
+
+Serve para criar um vetor a partir de uma string. Cada elemento do vetor é um caractere da string, separado pelo parâmetro "separador".
+
+Substring(inicio, fim)
+
+Retorna o substring que começa e termina com os caracteres indicados nos parâmetros "início" e "fim".
+
+ToLowerCase()
+
+Coloca todos os caracteres de uma string em minúsculos.
+
+ToUpperCase()
+
+Coloca todos os caracteres de uma string em maiúsculos.
+
+ToString()
+
+Este método é utilizado para converter qualquer objeto em string.
+
+Anchor()
+
+Converte uma cadeia de caracteres em uma âncora (local onde tem um link). É semelhante ao atributo name da tag <a>.
+
+Big()
+
+Aumenta o tamanho da fonte de uma string. É semelhante às tags <big></big>.
+
+Blink()
+
+É utilizado para que uma string fique piscando. É semelhante a tag <blink>. Funciona somente no navegador Netscape.
+
+Bold()
+
+Deixa o texto de uma string em negrito.
+
+Fixed()
+
+Deixa o texto de uma string com espaçamento único na fonte.
+
+FontColor(cor)
+
+Coloca no texto de uma string a cor passada por parâmetro.
+
+FontSize(tamanho)
+
+Coloca no texto de uma string o tamanho de fonte indicado por parâmetro.
+
+Italics()
+
+Deixa o texto de uma string em itálico.
+
+Link(URL)
+
+Coloca no texto de uma string o link indicado por parâmetro.
+
+Small()
+
+É como utilizar a tag <small> do HTML.
+
+Strike()
+
+Deixa o texto de uma string riscado.
+
+Sub()
+
+Deixa o texto de uma string como um sub-índice.
+
+Sup()
+
+Deixa o texto de uma string como um super índice.
+
+
+Vejamos agora, um exemplo de uso da classe string:
+
+var meuString = "Olá turma";
+
+var result = "";
+
+for (i = 0; i < meuString.length-1; i++) {
+
+result = meuString.chartAt (i);
+
+result = ".";
+
+}
+
+result += meuString.chartAt (meuString.length-1);
+
+document.write (result);
+
+No exemplo anterior escrevemos o conteúdo de uma string com um caractere separador, o ponto final (.), em cada uma das letras do texto.
+
+Para isso, primeiro criamos duas variáveis, uma com o texto a ser percorrido e a outra sem nenhum texto, para que o resultado seja salvo nela.
+
+Em seguida, fizemos um loop que percorre desde o primeiro até o último caractere da string. Utilizamos a propriedade length para conhecermos o número de caracteres do texto e em cada interação inserimos o ponto após a letra.
+
+Para termos acesso às posições da string utilizamos o método charAt. E, finalmente, exibimos o resultado na tela.
