@@ -8,9 +8,9 @@ public class Main {
         
 
         File file = new File("src/br/com/comandosimples/arquivo.txt");
-        InputStream is = new FileInputStream(file);
-        InputStreamReader isr = new InputStreamReader(is);
-        BufferedReader br = new BufferedReader(isr);
+        InputStream is = new FileInputStream(file); // bytes
+        InputStreamReader isr = new InputStreamReader(is); // char
+        BufferedReader br = new BufferedReader(isr);  // String
 
         String line = br.readLine();
 
